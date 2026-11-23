@@ -385,7 +385,7 @@ body:has(.sp-page) > .w    { width: 100% !important; max-width: none !important;
     gap: 6px;
 }
 .sp-brand-go {
-    color: #EE2737;
+    color: #EE4D2D;
     font-size: 22px;
     font-weight: 800;
     display: inline-flex;
@@ -645,7 +645,6 @@ body:has(.sp-page) > .w    { width: 100% !important; max-width: none !important;
                 <a href="/produk">MENU</a>
                 <a href="/peringkat">ROTI TERPOPULER</a>
                 <a href="/sponsorship" class="active">SPONSORSHIP</a>
-                <a href="/kontak">KONTAK</a>
             </nav>
             <a class="sp-account" href="/login" aria-label="Masuk admin">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -816,8 +815,8 @@ body:has(.sp-page) > .w    { width: 100% !important; max-width: none !important;
                     <div>
                         <div class="sp-story-logo">
                             <div class="sp-brand-grab">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="#00B14F"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z"/></svg>
-                                <span>GrabFood</span>
+                                <img src="{{ asset('images/grab.png') }}" alt="Logo GrabFood" style="height:24px; width:auto">
+                                <span>Grab Food</span>
                             </div>
                         </div>
                         <p class="sp-story-quote">
@@ -830,7 +829,7 @@ body:has(.sp-page) > .w    { width: 100% !important; max-width: none !important;
                         </div>
                         <div>
                             <div class="sp-story-name">Devi Alfilovita</div>
-                            <div class="sp-story-role">Manajer Akun Utama di GrabFood</div>
+                            <div class="sp-story-role">Manajer Akun Utama di Grab Food</div>
                         </div>
                     </div>
                 </div>
@@ -840,8 +839,8 @@ body:has(.sp-page) > .w    { width: 100% !important; max-width: none !important;
                     <div>
                         <div class="sp-story-logo">
                             <div class="sp-brand-go">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="#EE2737"><circle cx="12" cy="12" r="10"/><path d="M9 8v8l7-4-7-4z" fill="#fff"/></svg>
-                                <span>gofood</span>
+                                <img src="{{ asset('images/sopi.png') }}" alt="Logo GoFood" style="height:24px; width:auto">
+                                <span>Shopee Food</span>
                             </div>
                         </div>
                         <p class="sp-story-quote">
@@ -854,7 +853,7 @@ body:has(.sp-page) > .w    { width: 100% !important; max-width: none !important;
                         </div>
                         <div>
                             <div class="sp-story-name">Nina Sudianto</div>
-                            <div class="sp-story-role">Kemitraan Pedagang Perusahaan di GoFood</div>
+                            <div class="sp-story-role">Kemitraan Pedagang Perusahaan di Shopee Food</div>
                         </div>
                     </div>
                 </div>
@@ -864,8 +863,8 @@ body:has(.sp-page) > .w    { width: 100% !important; max-width: none !important;
                     <div>
                         <div class="sp-story-logo">
                             <div class="sp-brand-sos">
-                                <span style="font-size:22px">👨‍👩‍👧‍👦</span>
-                                <span>SOS CHILDREN'S<br>VILLAGES</span>
+                                <img src="{{ asset('images/um.png') }}" alt="um" style="height:24px; width:auto">
+                                <span>Universitas Negeri<br>Malang</span>
                             </div>
                         </div>
                         <p class="sp-story-quote">
@@ -877,8 +876,8 @@ body:has(.sp-page) > .w    { width: 100% !important; max-width: none !important;
                             <span>👨‍💼</span>
                         </div>
                         <div>
-                            <div class="sp-story-name">Sumanda Tondang</div>
-                            <div class="sp-story-role">Direktur Pengembangan Dana & Komunikasi di SOS Children's Villages</div>
+                            <div class="sp-story-name">Prof. Dr. Hariyono, M.Pd.</div>
+                            <div class="sp-story-role">Rektor Universitas Negeri Malang</div>
                         </div>
                     </div>
                 </div>

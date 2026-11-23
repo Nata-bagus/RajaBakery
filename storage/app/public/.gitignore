@@ -1,2 +1,6 @@
 *
 !.gitignore
+!produk/
+!produk/*
+!sponsor/
+!sponsor/*
