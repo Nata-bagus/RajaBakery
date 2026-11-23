@@ -9,7 +9,7 @@ body:has(.detail-page) > .w    { width: 100% !important; max-width: none !import
 
 /* ── Page shell ── */
 .detail-page {
-    --dp-bg:     #edf6ff;
+    --dp-bg:     #F7E7C9;
     --dp-brown:  #a3520f;
     --dp-gold:   #f3a821;
     --dp-orange: #fd9a02;
