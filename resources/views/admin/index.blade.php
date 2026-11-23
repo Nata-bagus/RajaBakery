@@ -133,7 +133,11 @@
                         @endif
                     </td>
                     <td>
-                        <span class="adm-tag adm-tag-gold">{{ ucfirst($p->kategori ?? 'Umum') }}</span>
+                        @php
+                            $katLabels = ['manis' => 'Roti Manis', 'asin' => 'Roti Gurih', 'donat' => 'Donat', 'inovasi' => 'Roti Inovasi'];
+                            $katName = $katLabels[$p->kategori] ?? ucfirst($p->kategori ?? 'Umum');
+                        @endphp
+                        <span class="adm-tag adm-tag-gold">{{ $katName }}</span>
                     </td>
                     <td>
                         <strong style="color:var(--adm-brown)">

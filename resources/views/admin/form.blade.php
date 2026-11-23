@@ -33,7 +33,7 @@
             <div class="adm-form-group">
                 <label class="adm-label" for="kategori">Kategori</label>
                 <select class="adm-select" id="kategori" name="kategori">
-                    @foreach(['manis' => 'Roti Manis', 'asin' => 'Roti Gurih', 'donat' => 'Donat', 'besar' => 'Besar', 'mix' => 'Mix', 'minuman' => 'Minuman', 'tart' => 'Tart', 'aksesoris' => 'Aksesoris', 'cookies' => 'Cookies'] as $k => $label)
+                    @foreach(['manis' => 'Roti Manis', 'asin' => 'Roti Gurih', 'donat' => 'Donat', 'inovasi' => 'Roti Inovasi'] as $k => $label)
                         <option value="{{ $k }}" @selected(old('kategori', $p->kategori) == $k)>{{ $label }}</option>
                     @endforeach
                 </select>

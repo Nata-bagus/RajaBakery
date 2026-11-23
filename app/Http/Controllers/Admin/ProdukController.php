@@ -7,10 +7,13 @@ class ProdukController extends Controller {
     private function data(Request $r) {
         $d = $r->validate([
             'nama' => 'required|max:100', 'harga' => 'nullable|integer|min:0',
-            'kategori' => 'required|in:manis,asin,besar,mix,minuman,tart,aksesoris,cookies',
+            'kategori' => 'required|in:manis,asin,donat,inovasi,besar,mix,minuman,tart,aksesoris,cookies',
             'rasa' => 'nullable|max:150', 'deskripsi' => 'nullable',
             'status_produk' => 'required|in:menu_tetap,kandidat_baru', 'foto' => 'nullable|image|max:5120',
         ]);
+        if ($d['kategori'] === 'inovasi') {
+            $d['status_produk'] = 'kandidat_baru';
+        }
         $d['bisa_divote'] = $r->boolean('bisa_divote');
         $d['status_tampil'] = $r->boolean('status_tampil');
         if ($r->hasFile('foto')) $d['foto'] = $r->file('foto')->store('produk', 'public');
