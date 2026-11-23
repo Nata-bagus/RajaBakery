@@ -336,7 +336,7 @@ body:has(.menu-page) > .w  { max-width: none; padding: 0 }
         </form>
 
         <div class="menu-filter-row" role="group" aria-label="Filter kategori">
-            @foreach(['' => 'Semua', 'manis' => 'Roti Manis', 'asin' => 'Roti Gurih', 'donat' => 'Donat'] as $k => $l)
+            @foreach(['' => 'Semua', 'manis' => 'Roti Manis', 'asin' => 'Roti Gurih', 'donat' => 'Donat', 'inovasi' => 'Roti Inovasi'] as $k => $l)
                 <a
                     class="menu-filter-btn {{ request('kategori', '') == $k ? 'active' : '' }}"
                     href="{{ request()->fullUrlWithQuery(['kategori' => $k ?: null, 'page' => null]) }}"

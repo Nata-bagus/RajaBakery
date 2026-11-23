@@ -23,8 +23,13 @@ class PublicController extends Controller {
         $periode = Periode::aktif();
         $q = $this->hitung($periode->id_periode ?? 0);
         if ($r->q) $q->where('nama', 'like', '%' . $r->q . '%');
-        if ($r->kategori == 'donat') $q->where('nama', 'like', '%donat%');
-        elseif ($r->kategori) $q->where('kategori', $r->kategori);
+        if ($r->kategori == 'donat') {
+            $q->where('nama', 'like', '%donat%');
+        } elseif ($r->kategori == 'inovasi') {
+            $q->where(fn($sub) => $sub->where('status_produk', 'kandidat_baru')->orWhere('kategori', 'inovasi'));
+        } elseif ($r->kategori) {
+            $q->where('kategori', $r->kategori);
+        }
         $produk = $q->orderBy('nama')->paginate(24)->withQueryString();
         return view('produk', compact('periode', 'produk'));
     }
